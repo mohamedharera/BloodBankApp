@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:gravity="center" >
+    <!--android:padding="10dp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:orientation="horizontal"-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="6dp"
+        android:background="@color/background"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/my_relative1"
+            android:layoutDirection="ltr"
+            android:gravity="left"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/another_shape3">
+
+            <android.support.v7.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/DonationSearch"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:id="@+id/search_Relative"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/circle3">-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="18dp"-->
+            <!--android:layout_height="18dp"-->
+            <!--android:id="@+id/search_data"-->
+            <!--android:clickable="true"-->
+            <!--android:background="@mipmap/search"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:weightSum="2"-->
+        <!--android:layout_toRightOf="@+id/search_Relative">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/my_relative1"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--android:background="@drawable/another_shape3"-->
+            <!--android:layout_marginLeft="3dp">-->
+
+            <!--<Spinner-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/spinnerCity"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="left"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/my_relative2"-->
+            <!--android:gravity="right"-->
+            <!--android:background="@drawable/another_shape3"-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:layout_toRightOf="@+id/my_relative1">-->
+
+            <!--<Spinner-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/spinnerbags"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="right"/>-->
+
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>
+</RelativeLayout>

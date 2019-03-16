@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.bank.Donation_Ask">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/actionbar_color"
+            android:theme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:textSize="18dp"
+                android:text="طلب تبرع"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textColor="@color/text_bar"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="6dp"
+                android:id="@+id/donationAsk_back"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/goback"
+                android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@mipmap/splash">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/name"
+                android:padding="10dp"
+                android:gravity="right"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="9dp"
+                android:hint="الاسم"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/birth"
+                android:padding="10dp"
+                android:inputType="number"
+                android:gravity="right"
+                android:imeOptions="actionNext"
+                android:layout_below="@+id/name"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp"
+                android:hint="العمر"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/birth"
+                android:id="@+id/blood_kind">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:background="@drawable/register_view_border">
+
+                    <Spinner
+                        android:id="@+id/spinnerBlood"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:spinnerMode="dropdown"
+                        android:gravity="right"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/bugsRelative"
+                android:layout_below="@+id/blood_kind">
+
+            <EditText
+                android:hint="عدد الاكياس"
+                android:id="@+id/blugsText"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:gravity="right"
+                android:background="@drawable/register_view_border" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/hospital"
+                android:padding="10dp"
+                android:layout_below="@+id/bugsRelative"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:gravity="right"
+                android:imeOptions="actionNext"
+                android:hint="اسم المستشفى"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hospital"
+                android:id="@+id/address"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:gravity="right"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp"
+                android:hint="عنوان المستشفى"/>
+            <!--<RelativeLayout-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/view"-->
+                <!--android:id="@+id/relative5"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginRight="3dp"-->
+                <!--android:layout_toLeftOf="@+id/address"-->
+                <!--android:layout_below="@+id/hospital">-->
+                <!--<Button-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:onClick="getAddress"-->
+                    <!--android:id="@+id/addLocation"-->
+                    <!--android:background="@mipmap/location" />-->
+            <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/countryRelative"
+            android:layout_below="@+id/address">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:background="@drawable/register_view_border">
+
+                <Spinner
+                    android:id="@+id/spinnerCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:gravity="right"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:id="@+id/cityRelative"
+            android:layout_below="@+id/countryRelative">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/register_view_border">
+
+                <Spinner
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:padding="10dp"
+                    android:gravity="right"/>
+            </LinearLayout>
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_below="@+id/cityRelative"
+                android:id="@+id/phone"
+                android:gravity="right"
+                android:inputType="phone"
+                android:imeOptions="actionNext"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp"
+                android:hint="رقم الهاتف"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/notice"
+                android:padding="10dp"
+                android:layout_below="@+id/phone"
+                android:gravity="top|right"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp"
+                android:hint="ملاحظات"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="ارسال الطلب"
+                android:textStyle="bold"
+                android:id="@+id/postata"
+                android:onClick="postData"
+                android:layout_below="@+id/notice"
+                android:textColor="@color/view"
+                android:layout_marginTop="10dp"
+                android:background="@color/buttonColor"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

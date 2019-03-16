@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mohamed.bank">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/NoBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".Views.RegisterActivity"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".Views.LoginActivity"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".ReportActivity"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".CallUsActivity"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".Donation_Ask"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".AboutApp"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".NotificationSettings.NotificationsSettings"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".Notifications.Notification"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".Favourites.Favorites"
+            android:theme="@style/NoBarTheme" />
+        <activity
+            android:name=".Home.HomeActivity"
+            android:theme="@style/NoBarTheme" />
+        <activity android:name=".DetailsDonationAsk" />
+        <activity android:name=".Views.ReportDetails" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAtL3pwXi_KjKmlSVxvtGYAJvTnkRyl7rM" />
+
+        <activity android:name=".ProfileActivity"></activity>
+    </application>
+
+</manifest>

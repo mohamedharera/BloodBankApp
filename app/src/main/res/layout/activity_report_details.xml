@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.bank.Views.ReportDetails">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/actionbar_color"
+            android:theme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:textSize="18dp"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:id="@+id/toolbarTitle"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text_bar"/>
+                    <!--<ImageView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:id="@+id/reportdetails_back"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:background="@mipmap/goback"-->
+                        <!--android:layout_marginTop="10dp"/>-->
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="4dp"
+                    android:src="@mipmap/notify"/>
+
+                <com.nex3z.notificationbadge.NotificationBadge
+                    android:id="@+id/badge"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/imageView20"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/imageView20"
+                    android:background="@drawable/notify" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar"
+            android:padding="10dp"
+            android:background="#f9f6f6"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/my_relative1"
+                android:background="@drawable/notify_border">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/interface_image"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_relative1"
+                android:layout_marginTop="6dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="3dp"
+                    android:id="@id/my_relative2"
+                    android:background="#ffffff"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="طريقة الوقايه من الامراض"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/text_title"
+                        android:layout_margin="6dp"
+                        android:textColor="@color/text"
+                        android:textSize="17dp"/>
+                    <!--<CheckBox-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_marginLeft="13dp"-->
+                        <!--android:button="@null"-->
+                        <!--android:background="@drawable/save_unsave"-->
+                        <!--android:layoutDirection="ltr" />-->
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/my_relative2"
+                    android:background="#ffffff"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_details"
+                        android:textSize="15dp"
+                        android:padding="6dp"
+                        android:textColor="@color/text"
+                        android:text="@string/about_app2"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

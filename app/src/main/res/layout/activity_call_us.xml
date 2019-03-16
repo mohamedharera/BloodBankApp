@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.bank.CallUsActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/actionbar_color"
+        android:theme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:textSize="18dp"
+                android:text="اتصل بنا"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textColor="@color/text_bar"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:id="@+id/logo"
+                    android:src="@mipmap/icon" />
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:id="@+id/img_phone"
+                    android:src="@mipmap/phone"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginTop="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/head_phone"
+                    android:layout_marginRight="40dp"
+                    android:text="الجوال  :"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/head_phone"
+                    android:layout_below="@+id/logo"
+                    android:id="@+id/phone"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="6dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/text"/>
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:id="@+id/img_message"
+                    android:src="@mipmap/message"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/head_phone"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/head_phone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/head_email"
+                    android:layout_marginRight="40dp"
+                    android:text="البريد الالكترونى  :"
+                    android:textSize="18dp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/head_email"
+                    android:layout_below="@+id/head_phone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/email"
+                    android:layout_marginRight="6dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/text"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative"
+                android:weightSum="6"
+                android:padding="10dp"
+                android:id="@+id/linearContact"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/facebook"
+                    app:civ_border_color="#EEEEEE"
+                    android:scaleType="centerCrop" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/twitter"
+                    app:civ_border_color="#EEEEEE"
+                    android:scaleType="centerCrop" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/youtube"
+                    app:civ_border_color="#EEEEEE"
+                    android:scaleType="centerCrop" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/insta"
+                    android:layout_width="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/insta"
+                    app:civ_border_color="#EEEEEE"
+                    android:scaleType="centerCrop" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/whats"
+                    android:layout_width="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/whats"
+                    app:civ_border_color="#EEEEEE"
+                    android:scaleType="centerCrop" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gmail"
+                    android:layout_width="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/gmail"
+                    app:civ_border_color="#EEEEEE"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearContact"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/messageTitle"
+                        android:padding="6dp"
+                        android:background="@drawable/register_view_border"
+                        android:layout_marginTop="9dp"
+                        android:hint="عنوان الرساله"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:id="@+id/messageText"
+                        android:padding="6dp"
+                        android:gravity="start"
+                        android:background="@drawable/register_view_border"
+                        android:layout_marginTop="10dp"
+                        android:hint="نص الرسااله"/>
+                    <Button
+                        android:layout_width="360dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ارسال"
+                        android:onClick="sendMessage"
+                        android:layout_gravity="center"
+                        android:textColor="@color/view"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:background="@color/buttonColor" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

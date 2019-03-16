@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#edeaea</color>
+    <color name="colorPrimaryDark">#133e53</color>
+    <color name="colorAccent">#133e53</color>
+
+    <color name="background">#f1eeee</color>
+    <color name="view">#ffffff</color>
+    <color name="buttonColor">#133e53</color>
+    <color name="text_bar">#16303d</color>
+    <color name="text">#1d1c1c</color>
+    <color name="active_dots">#495c66</color>
+    <color name="inactive_dots">#f4f1f1</color>
+    <color name="actionbar_color">#f7f3f3</color>
+    <color name="profileColor">#646363</color>
+    <color name="recyclerBackground">#f1eeee</color>
+    <color name="red">@android:color/holo_red_dark</color>
+</resources>

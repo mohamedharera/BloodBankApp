@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.bank.Views.RegisterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/actionbar_color"
+            android:theme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:textSize="18dp"
+                android:text="انشاء حساب جديد"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/text_bar"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@mipmap/splash">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/name"
+                android:padding="10dp"
+                android:gravity="right"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="9dp"
+                android:hint="الاسم"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:gravity="left"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp"
+                android:hint="البريد الالكترونى"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/last_date"
+                        android:id="@+id/showDatePicker" />
+                </RelativeLayout>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:gravity="right"
+                    android:hint="تاريخ الميلاد"
+                    android:background="@drawable/register_view_border"
+                    android:id="@+id/birth"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="3dp"
+                    android:clickable="true" />
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/blood"
+                android:padding="10dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:gravity="right"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp"
+                android:hint="فصيلة الدم"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_view_border">
+
+                <Spinner
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_view_border">
+                <Spinner
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/mobile"
+                android:padding="10dp"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:gravity="right"
+                android:inputType="phone"
+                android:hint="رقم الهاتف"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/register_view_border"
+                android:hint="كلمة المرور"
+                android:imeOptions="actionNext"
+                android:textDirection="rtl"
+                android:gravity="right|center"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center"
+                android:imeOptions="actionNext"
+                android:background="@drawable/register_view_border"
+                android:hint="تأكيد كلمة المرور"
+                android:textDirection="rtl"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/register_view_border"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/last_date"
+                        android:id="@+id/showLastDate"
+                        tools:ignore="OnClick" />
+                </RelativeLayout>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:hint="اخر تاريخ للتبرع"
+                    android:padding="10dp"
+                    android:background="@drawable/register_view_border"
+                    android:id="@+id/last_date"
+                    android:imeOptions="actionDone"
+                    android:layout_marginLeft="3dp"
+                    android:clickable="true" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="تسجيل"
+                android:textColor="@color/view"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:onClick="register_button"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:background="@color/buttonColor"
+                android:id="@+id/sign_up"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

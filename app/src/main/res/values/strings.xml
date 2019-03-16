@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Bank</string>
+    <string name="about_app">هذل النص هو مثال لنص يمكن ان يستبدل فى نص المساحه. لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك ان تولد مثل هذا النص او العديد من النصوص الاخرى اضافى الى زيادة عدد الحروف التى يولدها التطبيق.
+    هذل النص هو مثال لنص يمكن ان يستبدل فى نص المساحه. لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك ان تولد مثل هذا النص او العديد من النصوص الاخرى اضافى الى زيادة عدد الحروف التى يولدها التطبيق.
+    </string>
+    <string name="about_app2">هذل النص هو مثال لنص يمكن ان يستبدل فى نص المساحه. لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك ان تولد مثل هذا النص او العديد من النصوص الاخرى اضافى الى زيادة عدد الحروف التى يولدها التطبيق.
+    هذل النص هو مثال لنص يمكن ان يستبدل فى نص المساحه. لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك ان تولد مثل هذا النص او العديد من النصوص الاخرى اضافى الى زيادة عدد الحروف التى يولدهاالتطبيق.
+        هذل النص هو مثال لنص يمكن ان يستبدل فى نص المساحه. لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك ان تولد مثل هذا النص او العديد من النصوص الاخرى اضافى الى زيادة عدد الحروف التى يولدها التطبيق.
+        هذل النص هو مثال لنص يمكن ان يستبدل فى نص المساحه. لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك ان تولد مثل هذا النص او العديد من النصوص الاخرى اضافى الى زيادة عدد الحروف التى يولدها التطبيق.
+        هذل النص هو مثال لنص يمكن ان يستبدل فى نص المساحه. لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك ان تولد مثل هذا النص او العديد من النصوص الاخرى اضافى الى زيادة عدد الحروف التى يولدها التطبيق.
+
+    </string>
+    <string name="data"> 5/2/2018 الاربعاء</string>
+
+    <string name="myprefrence">"com.abc.com.MyPref"</string>
+    <string name="myprefrence_key">"com.abc.com.MyPref_key"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details">
+        التفاصيل
+        \n
+        هذل النص هو مثال لنص يمكن ان يستبدل فى نص المساحه. لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك ان تولد مثل هذا النص او العديد من النصوص الاخرى اضافى الى زيادة عدد الحروف التى يولدها التطبيق.
+    </string>
+
+    <string name="Open"></string>
+    <string name="Close"></string>
+
+    <array name="blood_type">
+        <item>اختر فصيلة الدم</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </array>
+    <array name="countries">
+        <item>اختر المدينه</item>
+        <item>المنصوره</item>
+        <item></item>
+        <item>الزقازيق</item>
+        <item>المحله</item>
+        <item>طلخا</item>
+        <item>ميت غمر</item>
+        <item>أجا</item>
+        <item>دكرنس</item>
+        <item>السنبلاوين</item>
+    </array>
+
+
+    <array name="town">
+        <item>المدينه</item>
+        <item>المنصوره</item>
+        <item></item>
+        <item>الزقازيق</item>
+        <item>المحله</item>
+        <item>طلخا</item>
+        <item>ميت غمر</item>
+        <item>أجا</item>
+        <item>دكرنس</item>
+        <item>السنبلاوين</item>
+    </array>
+    <array name="country">
+        <item>المحافظه</item>
+        <item>الإسكندرية</item>
+        <item>الإسماعيلية</item>
+        <item>أسوان</item>
+        <item>أسيوط</item>
+        <item>الأقصر</item>
+        <item>البحر الأحمر</item>
+        <item>البحيرة</item>
+        <item>بني سويف</item>
+        <item>جنوب سيناء</item>
+        <item>الجيزة</item>
+        <item>الدقهلية</item>
+        <item>دمياط</item>
+        <item>سوهاج</item>
+        <item>السويس</item>
+        <item>الغربية</item>
+        <item>الشرقية</item>
+        <item>شمال سيناء</item>
+        <item>القاهرة</item>
+        <item>القليوبية</item>
+    </array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="google_place_api">AIzaSyA6PrKpl-bDQ2MUj6Dwob8blRbIv6_nSBU</string>
+
+    <string name="badge_count_textsize">10dp</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

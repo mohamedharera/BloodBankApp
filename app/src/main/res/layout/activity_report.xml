@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed.bank.ReportActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/actionbar_color"
+            android:theme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:textSize="18dp"
+                    android:text="ابلاغ"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textColor="@color/text_bar"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/appbar"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/register_view_border"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/logo"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/report_text"
+            android:hint="نص الرساله"
+            android:gravity="top"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="ارسال"
+            android:onClick="sendReport"
+            android:layout_below="@+id/report_text"
+            android:background="@color/buttonColor"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="40dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

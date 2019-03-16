@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash"
+    style="@style/NoActionBar"
+    tools:context="com.example.mohamed.bank.Views.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/logo"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/icon" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="الجوال"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:id="@+id/phone"
+            android:imeOptions="actionNext"
+            android:gravity="right|center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/register_view_border"
+            android:layout_below="@+id/logo"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="كلمة المرور"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="right|center"
+            android:inputType="textPassword"
+            android:id="@+id/pass"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/register_view_border"
+            android:layout_below="@+id/phone"/>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/remember"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="تذكرنى"-->
+            <!--android:layout_below="@+id/pass"-->
+            <!--android:layout_marginTop="13dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="16dp"/>-->
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="25dp"
+            android:text="دخول"
+            android:onClick="enter"
+            android:id="@+id/enter"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="#4CAF50"/>
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/enter"
+            android:layout_marginTop="20dp"
+            android:text="انشاء حساب جديد"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:onClick="register"
+            android:background="#039BE5"/>
+    </RelativeLayout>
+</RelativeLayout>
